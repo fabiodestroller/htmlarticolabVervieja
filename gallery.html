@@ -1,0 +1,252 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Galeria</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Medi Cure Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- toggle menu links -->
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- //menu links -->
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- effect9 links -->
+<link href="css/ihover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/swipebox.css">
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+</head>
+<!-- slide-toggle-menu -->
+<body class="cbp-spmenu-push">
+       <!--top-header-->
+		<!--bottom-->
+		  <section class="button">
+					<button id="showLeftPush"><img src="images/menu.png" alt=""></button>
+		   </section>
+			<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+				<h3>Menu</h3>
+						<a href="index.html">INICIO</a>
+						<a href="http://articotienda.com">TIENDA</a>
+						<a href="about.html">NOSOTROS</a>
+						<a href="blog.html">BLOG</a>
+						<a href="gallery.html" class="active">GALERIA</a>
+						<a href="contact.html">CONTACTO</a>
+		    </nav>
+		  
+		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+				if( button !== 'showRightPush' ) {
+					classie.toggle( showRightPush, 'disabled' );
+				}
+			}
+		</script>
+<!-- banner -->
+<div class="banner page-head">
+	<h1><a href="index.html"> <img src="images/logo.png"
+		width="192"
+		height="111"> 
+	</a></h1>
+	</div>
+	<div class="search">		
+		<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a>
+	</div>
+	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<div id="small-dialog" class="mfp-hide">
+			<div class="search-top">
+				<div class="login">
+					<input type="submit" value="">
+					<input type="text" value="Type something..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">		
+				</div>			
+			</div>
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+			</script>				
+		</div>
+	
+</div>
+<!-- //banner -->
+<!--gallery-starts--> 
+<div class="treatments">
+	<div class="container">
+		<h3 class="tittle">GALERIA</h3> 		
+			<script src="js/jquery.swipebox.min.js"></script> 
+			<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+			</script>
+				<div class="view view-sixth">
+                    <a href="images/b7.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/b7.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>SELLADORAS INDUSTRIALES</h4>
+                        <p>Contamos con selladoras de ultima tecnologia para la fabricacion de bolsas de gran medida.</p>
+                    </div></a>
+                </div>
+                <div class="view view-sixth">
+                    <a href="images/b2.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/b2.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>INVESTIGACION Y DESARROLLO</h4>
+                        <p>Nuestros colaboradores son profesionales capacitados para realizar tareas investigativas en los controles de calidad.</p>
+                    </div></a>
+                </div>
+                <div class="view view-sixth">
+                    <a href="images/b1.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/b1.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>REACTORES INDUSTRIALES</h4>
+                        <p>En una de nuestras etapas de produccion se encuentran los reeactores.</p>
+                    </div></a>
+                </div>
+				<div class="view view-sixth">
+                    <a href="images/b3.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/b3.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>AREAS COMERCIALES Y DESARROLLO DE SOFTWARE</h4>
+                        <p>Contamos con areas importantes en nuestro laboratorio que son comerciales y desarrollo digital de productos.</p>
+                    </div></a>
+                </div>
+                <div class="view view-sixth">
+                    <a href="images/b4.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/b4.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>Materias Primas</h4>
+                        <p>Contamos con el uso e implementacion de materias primas importadas de la mas alta calidad</p>
+                    </div></a>
+                </div>
+				<div class="view view-sixth">
+                    <a href="images/4.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/4.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>CONTROLES DE CALIDAD</h4>
+                        <p>Nuestros controles de calidad son los mas estrictos garantizando calidad a nuestros clientes.</p>
+                    </div></a>
+                </div>
+				<div class="view view-sixth">
+                    <a href="images/444.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/444.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>AREAS NORMATIVAS DE ALMACENAGE</h4>
+                        <p>Nuestro almacen de materias primas .</p>
+                    </div></a>
+                </div>
+				<div class="view view-sixth">
+                    <a href="images/44.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/44.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>INVESTIGACION</h4>
+                        <p>Investigamos y hacemos posible un balance para nuestras manos .</p>
+                    </div></a>
+                </div>
+                <div class="view view-sixth">
+                    <a href="images/b7.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/b7.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>AREA FABRICACION</h4>
+                        <p>Contamos con maquinas de enrollado y corte.</p>
+                    </div></a>
+                </div>
+                
+				<div class="clearfix"></div>
+	</div>
+</div>
+<!--gallery-ends--> 
+<!-- contact -->
+<div class="contact-home">
+	<div class="map-home">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15861.66879236379!2d-75.51621684999999!3d6.3399752000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1679495339020!5m2!1ses!2sco"  ></iframe>
+			<div class="map-pos">
+			<div class="login-pad">
+				<h2>ENVIANOS UN MENSAJE</h2>
+					<form>
+						<input type="text" value="Nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" required="">
+						<input type="text" value="Correo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+						<input type="text" value="Telefono" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile';}" required="">
+						<label class="checkbox"><input type="checkbox" name="checkbox" checked><i> </i>Subscribete</label>
+						<textarea placeholder="Mensaje" required=""></textarea>
+						<input type="submit" value="Enviar">
+					</form>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //contact -->
+<!-- copy-right -->
+<div class="copy-right">
+	<div class="container">
+		<p> &copy; Derechos reservados 2022.  <a href="http://ipemicomunicaciones.com/"> IpemiComunicaciones</a></p>
+	</div>
+</div>
+<!-- //copy-right -->
+<!-- Bootstrap core JavaScript-->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<!-- js -->
+		 <script src="js/bootstrap.js"></script>
+	<!-- js -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>
